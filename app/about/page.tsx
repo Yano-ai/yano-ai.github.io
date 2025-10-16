@@ -124,6 +124,13 @@ const WhoWeArePage = () => {
       bio: 'Maria translates complex business needs into actionable AI strategies, helping clients navigate their digital transformation journey.',
       image: 'https://placeholder.pics/svg/300x300/E0E7FF/000000/Maria%20Garcia',
       social: { linkedin: '#', twitter: '#' }
+    },
+    {
+      name: 'Borgy Cabana',
+      title: 'Seasoned Professional',
+      bio: 'Borgy Cabana is a seasoned professional at 41 years old...',
+      image: '/images/borgy-cabana.png',
+      social: {}
     }
   ];
 
@@ -155,9 +162,10 @@ const WhoWeArePage = () => {
             <SectionTitle>Our Leadership</SectionTitle>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {leadershipTeam.map((member, index) => (
-                <div key={index} className="bg-gray-50 text-center p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-200">
-                  <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg" />
-                  <h3 className="text-xl font-bold text-gray-800">{member.name}</h3>
+                <a key={index} href={member.name === 'Borgy Cabana' ? '/about/borgy-cabana' : '#'}>
+                  <div className="bg-gray-50 text-center p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-200">
+                    <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg" />
+                    <h3 className="text-xl font-bold text-gray-800">{member.name}</h3>
                   <p className="text-blue-600 font-semibold mb-3">{member.title}</p>
                   <p className="text-gray-600 mb-4">{member.bio}</p>
                   <div className="flex justify-center space-x-4">
@@ -165,7 +173,8 @@ const WhoWeArePage = () => {
                     {member.social.twitter && <a href={member.social.twitter} className="text-gray-500 hover:text-blue-500"><Twitter /></a>}
                     {member.social.github && <a href={member.social.github} className="text-gray-500 hover:text-gray-900"><Github /></a>}
                   </div>
-                </div>
+                  </div>
+                </a>
               ))}
             </div>
           </div>
