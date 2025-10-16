@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Linkedin, Twitter, Github, BrainCircuit, Zap, ShieldCheck, Users, Lightbulb, Handshake, Target, Mail, Phone } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 // Reusable Helper component for section titles (consistent with main page)
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
@@ -103,6 +104,8 @@ const SiteFooter = () => (
 
 // "Who We Are" Page Component
 const WhoWeArePage = () => {
+  const router = useRouter();
+
   const leadershipTeam = [
     {
       name: 'Dr. Alistair Finch',
@@ -161,21 +164,39 @@ const WhoWeArePage = () => {
           <div className="container mx-auto px-6">
             <SectionTitle>Our Leadership</SectionTitle>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {leadershipTeam.map((member, index) => (
-                <a key={index} {...(member.name === 'Borgy Cabana' && { href: '/about/borgy-cabana' })}>
-                  <div className="bg-gray-50 text-center p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-200">
+              {leadershipTeam.map((member, index) => {
+                const isBorgyCabana = member.name === 'Borgy Cabana';
+                const cardProps: React.HTMLAttributes<HTMLDivElement> = {
+                  key: index,
+                  className: "bg-gray-50 text-center p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-200",
+                };
+
+                if (isBorgyCabana) {
+                  cardProps.onClick = () => router.push('/about/borgy-cabana');
+                  cardProps.role = 'link'; // Para sa accessibility
+                  cardProps.tabIndex = 0; // Para maging focusable
+                  cardProps.onKeyDown = (e) => { // Para ma-activate gamit ang keyboard
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      router.push('/about/borgy-cabana');
+                    }
+                  };
+                  cardProps.style = { cursor: 'pointer' }; // Biswal na indikasyon ng clickability
+                }
+
+                return (
+                  <div {...cardProps}>
                     <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg" />
                     <h3 className="text-xl font-bold text-gray-800">{member.name}</h3>
-                  <p className="text-blue-600 font-semibold mb-3">{member.title}</p>
-                  <p className="text-gray-600 mb-4">{member.bio}</p>
-                  <div className="flex justify-center space-x-4">
-                    {member.social.linkedin && <a href={member.social.linkedin} className="text-gray-500 hover:text-blue-700"><Linkedin /></a>}
-                    {member.social.twitter && <a href={member.social.twitter} className="text-gray-500 hover:text-blue-500"><Twitter /></a>}
-                    {member.social.github && <a href={member.social.github} className="text-gray-500 hover:text-gray-900"><Github /></a>}
+                    <p className="text-blue-600 font-semibold mb-3">{member.title}</p>
+                    <p className="text-gray-600 mb-4">{member.bio}</p>
+                    <div className="flex justify-center space-x-4">
+                      {member.social.linkedin && <a href={member.social.linkedin} className="text-gray-500 hover:text-blue-700" onClick={(e) => e.stopPropagation()}><Linkedin /></a>}
+                      {member.social.twitter && <a href={member.social.twitter} className="text-gray-500 hover:text-blue-500" onClick={(e) => e.stopPropagation()}><Twitter /></a>}
+                      {member.social.github && <a href={member.social.github} className="text-gray-500 hover:text-gray-900" onClick={(e) => e.stopPropagation()}><Github /></a>}
+                    </div>
                   </div>
-                  </div>
-                </a>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
