@@ -90,7 +90,7 @@ const SiteFooter = () => (
         </div>
       </div>
       <div className="mt-12 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
-        <p className="text-gray-500">&copy; {new Date().getFullYear()} Yano AI Technologies. All rights reserved.</p>
+        <p className="text-gray-500">&copy; 2025 Yano AI Technologies. All rights reserved.</p>
         <div className="flex space-x-4 mt-4 md:mt-0">
           <a href="#" className="text-gray-500 hover:text-white"><Linkedin /></a>
           <a href="#" className="text-gray-500 hover:text-white"><Twitter /></a>
@@ -162,7 +162,7 @@ const WhoWeArePage = () => {
             <SectionTitle>Our Leadership</SectionTitle>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {leadershipTeam.map((member, index) => (
-                <a key={index} href={member.name === 'Borgy Cabana' ? '/about/borgy-cabana' : '#'}>
+                <a key={index} {...(member.name === 'Borgy Cabana' && { href: '/about/borgy-cabana' })}>
                   <div className="bg-gray-50 text-center p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-200">
                     <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg" />
                     <h3 className="text-xl font-bold text-gray-800">{member.name}</h3>
