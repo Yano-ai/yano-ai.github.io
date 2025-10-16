@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Linkedin, Twitter, Github, BrainCircuit, Zap, ShieldCheck, Users, Lightbulb, Handshake, Target, Mail, Phone } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 // Reusable Helper component for section titles (consistent with main page)
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
@@ -90,7 +91,7 @@ const SiteFooter = () => (
         </div>
       </div>
       <div className="mt-12 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
-        <p className="text-gray-500">&copy; {new Date().getFullYear()} Yano AI Technologies. All rights reserved.</p>
+        <p className="text-gray-500">&copy; 2025 Yano AI Technologies. All rights reserved.</p>
         <div className="flex space-x-4 mt-4 md:mt-0">
           <a href="#" className="text-gray-500 hover:text-white"><Linkedin /></a>
           <a href="#" className="text-gray-500 hover:text-white"><Twitter /></a>
@@ -103,6 +104,8 @@ const SiteFooter = () => (
 
 // "Who We Are" Page Component
 const WhoWeArePage = () => {
+  const router = useRouter();
+
   const leadershipTeam = [
     {
       name: 'Dr. Alistair Finch',
@@ -124,6 +127,13 @@ const WhoWeArePage = () => {
       bio: 'Maria translates complex business needs into actionable AI strategies, helping clients navigate their digital transformation journey.',
       image: 'https://placeholder.pics/svg/300x300/E0E7FF/000000/Maria%20Garcia',
       social: { linkedin: '#', twitter: '#' }
+    },
+    {
+      name: 'Borgy Cabana',
+      title: 'Seasoned Professional',
+      bio: 'Borgy Cabana is a seasoned professional at 41 years old...',
+      image: '/images/borgy-cabana.png',
+      social: {}
     }
   ];
 
@@ -154,19 +164,35 @@ const WhoWeArePage = () => {
           <div className="container mx-auto px-6">
             <SectionTitle>Our Leadership</SectionTitle>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {leadershipTeam.map((member, index) => (
-                <div key={index} className="bg-gray-50 text-center p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-200">
-                  <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg" />
-                  <h3 className="text-xl font-bold text-gray-800">{member.name}</h3>
-                  <p className="text-blue-600 font-semibold mb-3">{member.title}</p>
-                  <p className="text-gray-600 mb-4">{member.bio}</p>
-                  <div className="flex justify-center space-x-4">
-                    {member.social.linkedin && <a href={member.social.linkedin} className="text-gray-500 hover:text-blue-700"><Linkedin /></a>}
-                    {member.social.twitter && <a href={member.social.twitter} className="text-gray-500 hover:text-blue-500"><Twitter /></a>}
-                    {member.social.github && <a href={member.social.github} className="text-gray-500 hover:text-gray-900"><Github /></a>}
+              {leadershipTeam.map((member, index) => {
+                const isBorgyCabana = member.name === 'Borgy Cabana';
+
+                return (
+                  <div
+                    key={index}
+                    className="relative bg-gray-50 text-center p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-200"
+                  >
+                    {isBorgyCabana && (
+                      <a
+                        href="/about/borgy-cabana"
+                        className="absolute inset-0 z-10"
+                        aria-label={`Learn more about ${member.name}`}
+                      >
+                        <span className="sr-only">Go to Borgy Cabana's page</span>
+                      </a>
+                    )}
+                    <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg relative z-0" />
+                    <h3 className="text-xl font-bold text-gray-800 relative z-0">{member.name}</h3>
+                    <p className="text-blue-600 font-semibold mb-3 relative z-0">{member.title}</p>
+                    <p className="text-gray-600 mb-4 relative z-0">{member.bio}</p>
+                    <div className="flex justify-center space-x-4 relative z-20">
+                      {member.social.linkedin && <a href={member.social.linkedin} className="text-gray-500 hover:text-blue-700" onClick={(e) => e.stopPropagation()}><Linkedin /></a>}
+                      {member.social.twitter && <a href={member.social.twitter} className="text-gray-500 hover:text-blue-500" onClick={(e) => e.stopPropagation()}><Twitter /></a>}
+                      {member.social.github && <a href={member.social.github} className="text-gray-500 hover:text-gray-900" onClick={(e) => e.stopPropagation()}><Github /></a>}
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
