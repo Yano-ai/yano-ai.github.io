@@ -30,7 +30,7 @@ export default function YanoAIPage() {
 
   const navLinks = [
     { href: '#services', label: 'Services' },
-    { href: '#about', label: 'About' },
+    { href: '/about', label: 'About' },
     { href: '#why-us', label: 'Why Us' },
     { href: '#contact', label: 'Contact' },
   ];
@@ -248,7 +248,7 @@ export default function YanoAIPage() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
-                <li><a href="#about" className="text-neutral-400 hover:text-white">About Us</a></li>
+                <li><a href="/about" className="text-neutral-400 hover:text-white">About Us</a></li>
                 <li><a href="#" className="text-neutral-400 hover:text-white">Careers</a></li>
               </ul>
             </div>
