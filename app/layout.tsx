@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import SiteHeader from "./components/SiteHeader";
+import SiteFooter from "./components/SiteFooter";
+import BackToTopButton from "./components/BackToTopButton";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -20,7 +23,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={jakarta.variable}>{children}</body>
+      <body className={`${jakarta.variable} font-sans bg-gradient-to-br from-gray-900 to-blue-900 text-gray-100 antialiased`}>
+        <div className="flex flex-col min-h-screen">
+          <SiteHeader />
+          <main className="flex-grow">{children}</main>
+          <SiteFooter />
+        </div>
+        <BackToTopButton />
+      </body>
     </html>
   );
 }
