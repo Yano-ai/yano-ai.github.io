@@ -166,30 +166,26 @@ const WhoWeArePage = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {leadershipTeam.map((member, index) => {
                 const isBorgyCabana = member.name === 'Borgy Cabana';
-                const cardProps: React.HTMLAttributes<HTMLDivElement> = {
-                  key: index,
-                  className: "bg-gray-50 text-center p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-200",
-                };
-
-                if (isBorgyCabana) {
-                  cardProps.onClick = () => router.push('/about/borgy-cabana');
-                  cardProps.role = 'link'; // Para sa accessibility
-                  cardProps.tabIndex = 0; // Para maging focusable
-                  cardProps.onKeyDown = (e) => { // Para ma-activate gamit ang keyboard
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      router.push('/about/borgy-cabana');
-                    }
-                  };
-                  cardProps.style = { cursor: 'pointer' }; // Biswal na indikasyon ng clickability
-                }
 
                 return (
-                  <div {...cardProps}>
-                    <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg" />
-                    <h3 className="text-xl font-bold text-gray-800">{member.name}</h3>
-                    <p className="text-blue-600 font-semibold mb-3">{member.title}</p>
-                    <p className="text-gray-600 mb-4">{member.bio}</p>
-                    <div className="flex justify-center space-x-4">
+                  <div
+                    key={index}
+                    className="relative bg-gray-50 text-center p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-200"
+                  >
+                    {isBorgyCabana && (
+                      <a
+                        href="/about/borgy-cabana"
+                        className="absolute inset-0 z-10"
+                        aria-label={`Learn more about ${member.name}`}
+                      >
+                        <span className="sr-only">Go to Borgy Cabana's page</span>
+                      </a>
+                    )}
+                    <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg relative z-0" />
+                    <h3 className="text-xl font-bold text-gray-800 relative z-0">{member.name}</h3>
+                    <p className="text-blue-600 font-semibold mb-3 relative z-0">{member.title}</p>
+                    <p className="text-gray-600 mb-4 relative z-0">{member.bio}</p>
+                    <div className="flex justify-center space-x-4 relative z-20">
                       {member.social.linkedin && <a href={member.social.linkedin} className="text-gray-500 hover:text-blue-700" onClick={(e) => e.stopPropagation()}><Linkedin /></a>}
                       {member.social.twitter && <a href={member.social.twitter} className="text-gray-500 hover:text-blue-500" onClick={(e) => e.stopPropagation()}><Twitter /></a>}
                       {member.social.github && <a href={member.social.github} className="text-gray-500 hover:text-gray-900" onClick={(e) => e.stopPropagation()}><Github /></a>}
