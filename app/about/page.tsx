@@ -134,6 +134,13 @@ const WhoWeArePage = () => {
       bio: 'Borgy Cabana is a seasoned professional at 41 years old...',
       image: '/images/borgy-cabana.png',
       social: {}
+    },
+    {
+      name: 'Willart Yao',
+      title: 'AI-Powered Web Developer',
+      bio: 'Willart Yao is a forward-thinking web developer with over 8 years of experience crafting dynamic, scalable web applications. Specializing in leveraging cutting-edge AI tools, Willart integrates technologies like machine learning frameworks (TensorFlow, PyTorch), generative AI (ChatGPT APIs, Stable Diffusion), and automation platforms (GitHub Copilot, Vercel AI SDK) to accelerate development, enhance user experiences, and optimize performance.',
+      image: '/images/willart-yao.png',
+      social: { linkedin: '#', github: 'https://github.com/willartyao' }
     }
   ];
 
@@ -166,6 +173,7 @@ const WhoWeArePage = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {leadershipTeam.map((member, index) => {
                 const isBorgyCabana = member.name === 'Borgy Cabana';
+                const isWillartYao = member.name === 'Willart Yao';
 
                 return (
                   <div
@@ -179,6 +187,15 @@ const WhoWeArePage = () => {
                         aria-label={`Learn more about ${member.name}`}
                       >
                         <span className="sr-only">Go to Borgy Cabana's page</span>
+                      </a>
+                    )}
+                    {isWillartYao && (
+                      <a
+                        href="/about/willart-yao"
+                        className="absolute inset-0 z-10"
+                        aria-label={`Learn more about ${member.name}`}
+                      >
+                        <span className="sr-only">Go to Willart Yao's page</span>
                       </a>
                     )}
                     <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg relative z-0" />
