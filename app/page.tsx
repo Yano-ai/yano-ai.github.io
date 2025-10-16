@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 import { Cpu, Server, BrainCircuit, Bot, Zap, ShieldCheck, Mail, Phone, Linkedin, Twitter, Github } from 'lucide-react';
 
