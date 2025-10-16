@@ -124,6 +124,14 @@ const WhoWeArePage = () => {
       bio: 'Maria translates complex business needs into actionable AI strategies, helping clients navigate their digital transformation journey.',
       image: 'https://placeholder.pics/svg/300x300/E0E7FF/000000/Maria%20Garcia',
       social: { linkedin: '#', twitter: '#' }
+    },
+    {
+      name: 'DR SasanMK',
+      codename: 'QuantumSassSpark',
+      title: 'Innovative Web Developer & AI Specialist',
+      bio: 'Crafting cutting-edge, AI-driven web solutions with a spark of creativity. Proficient in leveraging tools like TensorFlow, PyTorch, and LangChain to build intelligent, scalable applications. Passionate about fusing quantum-inspired algorithms with sleek, user-centric designs. Let\'s code the future, one sassy spark at a time! 🚀 #AIRevolution #WebDev #QuantumVibes',
+      image: 'https://placeholder.pics/svg/300x300/E0E7FF/000000/DR%20SasanMK',
+      social: { linkedin: '#', twitter: '#', github: '#' }
     }
   ];
 
