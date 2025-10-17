@@ -19,6 +19,9 @@ export default function AboutPage() {
       <p>
         <Link href="/who-we-are/about/team/gemini-ai">Gemini AI</Link>
       </p>
+      <p>
+        <Link href="/who-we-are/about/team/jade-tizon">Jade Tizon</Link>
+      </p>
     </main>
   );
 }
