@@ -101,24 +101,7 @@ const WillartYaoProfilePage = () => {
   const member = {
     name: 'Willart Yao',
     title: 'AI-Powered Web Developer',
-    bio: `Willart Yao is a forward-thinking web developer with over 8 years of experience crafting dynamic, scalable web applications. Specializing in leveraging cutting-edge AI tools, Willart integrates technologies like machine learning frameworks (TensorFlow, PyTorch), generative AI (ChatGPT APIs, Stable Diffusion), and automation platforms (GitHub Copilot, Vercel AI SDK) to accelerate development, enhance user experiences, and optimize performance.
-
-    Core Expertise:
-    - Frontend Mastery: React, Next.js, Vue.js – augmented with AI-driven design tools like Figma AI plugins and Midjourney for rapid prototyping and personalized UI/UX.
-    - Backend & Full-Stack: Node.js, Python (FastAPI, Django), serverless architectures on AWS Lambda and Vercel, powered by AI for code generation, debugging, and predictive analytics.
-    - AI Integration: Building intelligent web apps with NLP for chatbots, computer vision for image processing, and reinforcement learning for adaptive algorithms. Expertise in ethical AI deployment, ensuring privacy-compliant solutions with tools like LangChain and Hugging Face Transformers.
-    - DevOps & Tools: CI/CD pipelines with AI-optimized testing (e.g., Selenium with ML anomaly detection), containerization (Docker, Kubernetes), and performance tuning via AI profilers.
-
-    Achievements:
-    - Led development of an AI-enhanced e-commerce platform that reduced load times by 40% using predictive caching and ML-based personalization, deployed for a startup with 100K+ users.
-    - Contributor to open-source AI web libraries, with projects featured on GitHub trending for innovative prompt engineering in web automation.
-    - Speaker at tech conferences on "AI-Augmented Web Dev: From Code to Intelligence," advocating for accessible AI tools in modern stacks.
-
-    Mission: Willart believes in democratizing web development through AI, turning complex challenges into seamless, intelligent solutions. Always exploring emerging tech like WebAssembly for AI inference and edge computing.
-
-    *Connect on LinkedIn | GitHub: @willartyao | Portfolio: willartyao.dev*
-    "Code smarter, not harder – with AI as your co-pilot."
-    `,
+    bio: `An emerging web developer, Willart Yao brings almost a year of expertise in developing dynamic and scalable web applications, with a specialisation in advanced AI integration.`,
     image: '/images/ey.jpg', // Placeholder image
     social: { linkedin: '#', twitter: '#', github: 'https://github.com/willartyao' } // Assuming GitHub link is provided
   };
