@@ -119,7 +119,7 @@ const WillartYaoProfilePage = () => {
     *Connect on LinkedIn | GitHub: @willartyao | Portfolio: willartyao.dev*
     "Code smarter, not harder – with AI as your co-pilot."
     `,
-    image: '/images/willart-yao.png', // Placeholder image
+    image: '/images/ey.jpg', // Placeholder image
     social: { linkedin: '#', twitter: '#', github: 'https://github.com/willartyao' } // Assuming GitHub link is provided
   };
 
