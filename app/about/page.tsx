@@ -139,7 +139,7 @@ const WhoWeArePage = () => {
       name: 'Willart Yao',
       title: 'AI-Powered Web Developer',
       bio: 'Willart Yao is a forward-thinking web developer with over 8 years of experience crafting dynamic, scalable web applications. Specializing in leveraging cutting-edge AI tools, Willart integrates technologies like machine learning frameworks (TensorFlow, PyTorch), generative AI (ChatGPT APIs, Stable Diffusion), and automation platforms (GitHub Copilot, Vercel AI SDK) to accelerate development, enhance user experiences, and optimize performance.',
-      image: '/images/willart-yao.png',
+      image: '/images/ey.jpg',
       social: { linkedin: '#', github: 'https://github.com/willartyao' }
     }
   ];
