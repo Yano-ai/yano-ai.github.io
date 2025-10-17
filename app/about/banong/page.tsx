@@ -99,9 +99,9 @@ const SiteFooter = () => (
 
 const BanongProfilePage = () => {
   const member = {
-    name: 'Banong',
-    title: 'Software Engineer',
-    bio: `Banong is a highly skilled software engineer with a passion for building innovative solutions. With expertise in various programming languages and frameworks, Banong contributes to the development of robust and scalable applications.`,
+    name: 'Jade Tizon',
+    title: 'Web Designer and Developer',
+    bio: `Jade Tizon is a dedicated web designer and developer specializing in AI and machine learning. With a strong foundation in front-end and back-end technologies, Jade crafts intuitive, responsive websites that leverage machine learning algorithms to deliver personalized user experiences, predictive analytics, and intelligent automation. Passionate about bridging design aesthetics with advanced tech, Jade focuses on creating scalable solutions that drive innovation and efficiency for clients across various industries.`,
     image: 'https://via.placeholder.com/400', // Placeholder image
     social: { linkedin: '#', twitter: '#', github: '#' }
   };

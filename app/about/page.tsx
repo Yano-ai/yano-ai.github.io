@@ -154,9 +154,9 @@ const WhoWeArePage = () => {
       }
     },
     {
-      name: 'Banong',
+      name: 'Jade Tizon',
       title: 'Software Engineer',
-      bio: 'Banong is a highly skilled software engineer with a passion for building innovative solutions. With expertise in various programming languages and frameworks, Banong contributes to the development of robust and scalable applications.',
+      bio: 'Jade Tizon is a highly skilled software engineer with a passion for building innovative solutions. With expertise in various programming languages and frameworks, Jade Tizon contributes to the development of robust and scalable applications.',
       image: 'https://via.placeholder.com/400',
       social: { linkedin: '#', twitter: '#', github: '#' }
     }
@@ -192,7 +192,7 @@ const WhoWeArePage = () => {
               {leadershipTeam.map((member, index) => {
                 const isBorgyCabana = member.name === 'Borgy Cabana';
                 const isWillartYao = member.name === 'Willart Yao';
-                const isBanong = member.name === 'Banong';
+                const isJadeTizon = member.name === 'Jade Tizon';
 
                 return (
                   <div
@@ -217,13 +217,13 @@ const WhoWeArePage = () => {
                         <span className="sr-only">Go to Willart Yao's page</span>
                       </a>
                     )}
-                    {isBanong && (
+                    {isJadeTizon && (
                       <a
                         href="/about/banong"
                         className="absolute inset-0 z-10"
                         aria-label={`Learn more about ${member.name}`}
                       >
-                        <span className="sr-only">Go to Banong's page</span>
+                        <span className="sr-only">Go to Jade Tizon's page</span>
                       </a>
                     )}
                     <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg relative z-0" />
