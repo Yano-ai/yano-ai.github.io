@@ -16,6 +16,9 @@ export default function AboutPage() {
       <p>
         <Link href="/who-we-are/about/team/willart-yao">Willart Yao</Link>
       </p>
+      <p>
+        <Link href="/who-we-are/about/team/gemini-ai">Gemini AI</Link>
+      </p>
     </main>
   );
 }

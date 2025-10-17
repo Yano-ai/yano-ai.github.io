@@ -128,7 +128,6 @@ const WhoWeArePage = () => {
       image: 'https://placeholder.pics/svg/300x300/E0E7FF/000000/Maria%20Garcia',
       social: { linkedin: '#', twitter: '#' }
     },
-<<<<<<< Updated upstream
     {
       name: 'Borgy Cabana',
       title: 'Seasoned Professional',
