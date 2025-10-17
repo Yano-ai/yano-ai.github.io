@@ -138,26 +138,10 @@ const WhoWeArePage = () => {
     {
       name: 'Willart Yao',
       title: 'AI-Powered Web Developer',
-      bio: 'An emerging web developer, Willart Yao brings almost a year of expertise in developing dynamic and scalable web applications, with a specialisation in advanced AI integration.',
+      bio: 'An emerging web developer, Willart Yao brings almost a year of expertise in developing dynamic and scalable web applications, with a specialisation in advanced AI integration.
+',
       image: '/images/ey.jpg',
-      social: { linkedin: '#', github: 'https://github.com/willartyao' }
-    },
-    {
-      name: 'Jade Tizon',
-      title: 'AI Solutions Architect',
-      bio: 'Jade designs and optimizes intelligent systems that integrate machine learning and data-driven automation to enhance business performance and decision-making.',
-      image: '/image-aiko/jade-tizon.png',
-      social: {
-        linkedin: '#',
-        twitter: '#',
-      }
-    },
-    {
-      name: 'Jade Tizon',
-      title: 'Software Engineer',
-      bio: 'Jade Tizon is a highly skilled software engineer with a passion for building innovative solutions. With expertise in various programming languages and frameworks, Jade Tizon contributes to the development of robust and scalable applications.',
-      image: 'https://via.placeholder.com/400',
-      social: { linkedin: '#', twitter: '#', github: '#' }
+      social: { linkedin: '#', github: 'https://github.com/willartyao-design' }
     }
   ];
 
