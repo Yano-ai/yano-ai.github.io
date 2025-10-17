@@ -128,6 +128,7 @@ const WhoWeArePage = () => {
       image: 'https://placeholder.pics/svg/300x300/E0E7FF/000000/Maria%20Garcia',
       social: { linkedin: '#', twitter: '#' }
     },
+<<<<<<< Updated upstream
     {
       name: 'Borgy Cabana',
       title: 'Seasoned Professional',
@@ -141,6 +142,23 @@ const WhoWeArePage = () => {
       bio: 'Willart Yao is a forward-thinking web developer with over 8 years of experience crafting dynamic, scalable web applications. Specializing in leveraging cutting-edge AI tools, Willart integrates technologies like machine learning frameworks (TensorFlow, PyTorch), generative AI (ChatGPT APIs, Stable Diffusion), and automation platforms (GitHub Copilot, Vercel AI SDK) to accelerate development, enhance user experiences, and optimize performance.',
       image: '/images/ey.jpg',
       social: { linkedin: '#', github: 'https://github.com/willartyao' }
+    },
+    {
+      name: 'Jade Tizon',
+      title: 'AI Solutions Architect',
+      bio: 'Jade designs and optimizes intelligent systems that integrate machine learning and data-driven automation to enhance business performance and decision-making.',
+      image: '/image-aiko/jade-tizon.png',
+      social: {
+        linkedin: '#',
+        twitter: '#',
+      }
+    },
+    {
+      name: 'Banong',
+      title: 'Software Engineer',
+      bio: 'Banong is a highly skilled software engineer with a passion for building innovative solutions. With expertise in various programming languages and frameworks, Banong contributes to the development of robust and scalable applications.',
+      image: 'https://via.placeholder.com/400',
+      social: { linkedin: '#', twitter: '#', github: '#' }
     }
   ];
 
@@ -174,6 +192,7 @@ const WhoWeArePage = () => {
               {leadershipTeam.map((member, index) => {
                 const isBorgyCabana = member.name === 'Borgy Cabana';
                 const isWillartYao = member.name === 'Willart Yao';
+                const isBanong = member.name === 'Banong';
 
                 return (
                   <div
@@ -196,6 +215,15 @@ const WhoWeArePage = () => {
                         aria-label={`Learn more about ${member.name}`}
                       >
                         <span className="sr-only">Go to Willart Yao's page</span>
+                      </a>
+                    )}
+                    {isBanong && (
+                      <a
+                        href="/about/banong"
+                        className="absolute inset-0 z-10"
+                        aria-label={`Learn more about ${member.name}`}
+                      >
+                        <span className="sr-only">Go to Banong's page</span>
                       </a>
                     )}
                     <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg relative z-0" />
