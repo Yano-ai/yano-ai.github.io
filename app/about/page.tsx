@@ -130,9 +130,9 @@ const WhoWeArePage = () => {
     },
     {
       name: 'Borgy Cabana',
-      title: 'Seasoned Professional',
-      bio: 'Borgy Cabana is a seasoned professional at 41 years old...',
-      image: '/images/borgy-cabana.png',
+      title: 'Web Designer & Developer',
+      bio: '25-year-old web designer and developer from Lucena City, Quezon, Philippines. Passionate about blending creativity with tech to build intuitive, AI-powered websites using React, Vue.js, and tools like Midjourney and generative AI for optimized, adaptive designs. Self-taught innovator helping local businesses and global startups go digital. When not coding, exploring Lucena\'s food scenes, hiking Mt. Banahaw, or mentoring aspiring devs in AI web dev.',
+      image: 'https://lh3.googleusercontent.com/gg-dl/AJfQ9KR4MUETFdnkvbXPeTKbT_frnVOXRmj5B4XS24K--n3NpW1USK6qyR7-TBak-i_QmL6ezeWDJoSz-4EUK11xlbIY8FR4BPhniQYts4q7OV0yxaP27DLEHVlzC17ZNHqtvw7vx8aq9egyasLQwyPPyBHPfKsiuwIVwy2bv5xCMMs2JtiK=s1024-rj',
       social: {}
     }
   ];
