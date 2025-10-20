@@ -134,6 +134,30 @@ const WhoWeArePage = () => {
       bio: '25-year-old web designer and developer from Lucena City, Quezon, Philippines. Passionate about blending creativity with tech to build intuitive, AI-powered websites using React, Vue.js, and tools like Midjourney and generative AI for optimized, adaptive designs. Self-taught innovator helping local businesses and global startups go digital. When not coding, exploring Lucena\'s food scenes, hiking Mt. Banahaw, or mentoring aspiring devs in AI web dev.',
       image: 'https://lh3.googleusercontent.com/gg-dl/AJfQ9KR4MUETFdnkvbXPeTKbT_frnVOXRmj5B4XS24K--n3NpW1USK6qyR7-TBak-i_QmL6ezeWDJoSz-4EUK11xlbIY8FR4BPhniQYts4q7OV0yxaP27DLEHVlzC17ZNHqtvw7vx8aq9egyasLQwyPPyBHPfKsiuwIVwy2bv5xCMMs2JtiK=s1024-rj',
       social: {}
+    },
+    {
+      name: 'Willart Yao',
+      title: 'AI-Powered Web Developer',
+      bio: 'Willart Yao is a forward-thinking web developer with over 8 years of experience crafting dynamic, scalable web applications. Specializing in leveraging cutting-edge AI tools, Willart integrates technologies like machine learning frameworks (TensorFlow, PyTorch), generative AI (ChatGPT APIs, Stable Diffusion), and automation platforms (GitHub Copilot, Vercel AI SDK) to accelerate development, enhance user experiences, and optimize performance.',
+      image: '/images/ey.jpg',
+      social: { linkedin: '#', github: 'https://github.com/willartyao' }
+    },
+    {
+      name: 'Jade Tizon',
+      title: 'AI Solutions Architect',
+      bio: 'Jade designs and optimizes intelligent systems that integrate machine learning and data-driven automation to enhance business performance and decision-making.',
+      image: '/image-aiko/jade-tizon.png',
+      social: {
+        linkedin: '#',
+        twitter: '#',
+      }
+    },
+    {
+      name: 'Jade Tizon',
+      title: 'Software Engineer',
+      bio: 'Jade Tizon is a highly skilled software engineer with a passion for building innovative solutions. With expertise in various programming languages and frameworks, Jade Tizon contributes to the development of robust and scalable applications.',
+      image: 'https://via.placeholder.com/400',
+      social: { linkedin: '#', twitter: '#', github: '#' }
     }
   ];
 
@@ -166,6 +190,8 @@ const WhoWeArePage = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {leadershipTeam.map((member, index) => {
                 const isBorgyCabana = member.name === 'Borgy Cabana';
+                const isWillartYao = member.name === 'Willart Yao';
+                const isJadeTizon = member.name === 'Jade Tizon';
 
                 return (
                   <div
@@ -179,6 +205,24 @@ const WhoWeArePage = () => {
                         aria-label={`Learn more about ${member.name}`}
                       >
                         <span className="sr-only">Go to Borgy Cabana's page</span>
+                      </a>
+                    )}
+                    {isWillartYao && (
+                      <a
+                        href="/about/willart-yao"
+                        className="absolute inset-0 z-10"
+                        aria-label={`Learn more about ${member.name}`}
+                      >
+                        <span className="sr-only">Go to Willart Yao's page</span>
+                      </a>
+                    )}
+                    {isJadeTizon && (
+                      <a
+                        href="/about/banong"
+                        className="absolute inset-0 z-10"
+                        aria-label={`Learn more about ${member.name}`}
+                      >
+                        <span className="sr-only">Go to Jade Tizon's page</span>
                       </a>
                     )}
                     <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg relative z-0" />
