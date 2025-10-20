@@ -153,10 +153,10 @@ const WhoWeArePage = () => {
       }
     },
     {
-      name: 'Jade Tizon',
+      name: 'Roger',
       title: 'Software Engineer',
-      bio: 'Jade Tizon is a highly skilled software engineer with a passion for building innovative solutions. With expertise in various programming languages and frameworks, Jade Tizon contributes to the development of robust and scalable applications.',
-      image: 'https://via.placeholder.com/400',
+      bio: 'a highly skilled software engineer with a passion for building innovative solutions. With expertise in various programming languages and frameworks, Jade Tizon contributes to the development of robust and scalable applications.',
+      image: '/image-aiko/pictureko.png',
       social: { linkedin: '#', twitter: '#', github: '#' }
     }
   ];
