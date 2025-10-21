@@ -139,7 +139,7 @@ const WhoWeArePage = () => {
       name: 'Willart Yao',
       title: 'AI-Powered Web Developer',
       bio: `An emerging web developer, Willart Yao brings almost a year of expertise in developing dynamic and scalable web applications, with a specialisation in advanced AI integration.`,
-      image: 'https://github.com/Yano-ai/yano-ai.github.io/blob/yaowillart-design-patch-1/willart%20yao.png',     social: { linkedin: '#', github: 'https://github.com/willartyao-design' }
+      image: 'https://placeholder.pics/svg/300x300/DEDEDE/555555/Willart%20yao',     social: { linkedin: '#', github: 'https://github.com/willartyao-design' }
     }
   ];
 
