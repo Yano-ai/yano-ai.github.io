@@ -31,6 +31,7 @@ export default function YanoAIPage() {
   const navLinks = [
     { href: '#services', label: 'Services' },
     { href: '/about', label: 'About' },
+    { href: '/profile', label: 'Profile' },
     { href: '#why-us', label: 'Why Us' },
     { href: '#contact', label: 'Contact' },
   ];

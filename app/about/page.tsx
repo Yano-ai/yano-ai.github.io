@@ -130,9 +130,9 @@ const WhoWeArePage = () => {
     },
     {
       name: 'Borgy Cabana',
-      title: 'Seasoned Professional',
-      bio: 'Borgy Cabana is a seasoned professional at 41 years old...',
-      image: '/images/borgy-cabana.png',
+      title: 'Web Designer & Developer',
+      bio: '25-year-old web designer and developer from Lucena City, Quezon, Philippines. Passionate about blending creativity with tech to build intuitive, AI-powered websites using React, Vue.js, and tools like Midjourney and generative AI for optimized, adaptive designs. Self-taught innovator helping local businesses and global startups go digital. When not coding, exploring Lucena\'s food scenes, hiking Mt. Banahaw, or mentoring aspiring devs in AI web dev.',
+      image: 'https://lh3.googleusercontent.com/gg-dl/AJfQ9KR4MUETFdnkvbXPeTKbT_frnVOXRmj5B4XS24K--n3NpW1USK6qyR7-TBak-i_QmL6ezeWDJoSz-4EUK11xlbIY8FR4BPhniQYts4q7OV0yxaP27DLEHVlzC17ZNHqtvw7vx8aq9egyasLQwyPPyBHPfKsiuwIVwy2bv5xCMMs2JtiK=s1024-rj',
       social: {}
     },
     {
@@ -141,6 +141,23 @@ const WhoWeArePage = () => {
       bio: 'Willart Yao is a forward-thinking web developer with over 8 years of experience crafting dynamic, scalable web applications. Specializing in leveraging cutting-edge AI tools, Willart integrates technologies like machine learning frameworks (TensorFlow, PyTorch), generative AI (ChatGPT APIs, Stable Diffusion), and automation platforms (GitHub Copilot, Vercel AI SDK) to accelerate development, enhance user experiences, and optimize performance.',
       image: '/images/ey.jpg',
       social: { linkedin: '#', github: 'https://github.com/willartyao' }
+    },
+    {
+      name: 'Jade Tizon',
+      title: 'AI Solutions Architect',
+      bio: 'Jade designs and optimizes intelligent systems that integrate machine learning and data-driven automation to enhance business performance and decision-making.',
+      image: '/image-aiko/jade-tizon.png',
+      social: {
+        linkedin: '#',
+        twitter: '#',
+      }
+    },
+    {
+      name: 'Roger',
+      title: 'Software Engineer',
+      bio: 'a highly skilled software engineer with a passion for building innovative solutions. With expertise in various programming languages and frameworks, Jade Tizon contributes to the development of robust and scalable applications.',
+      image: '/image-aiko/pictureko.png',
+      social: { linkedin: '#', twitter: '#', github: '#' }
     }
   ];
 
@@ -174,6 +191,7 @@ const WhoWeArePage = () => {
               {leadershipTeam.map((member, index) => {
                 const isBorgyCabana = member.name === 'Borgy Cabana';
                 const isWillartYao = member.name === 'Willart Yao';
+                const isJadeTizon = member.name === 'Jade Tizon';
 
                 return (
                   <div
@@ -196,6 +214,15 @@ const WhoWeArePage = () => {
                         aria-label={`Learn more about ${member.name}`}
                       >
                         <span className="sr-only">Go to Willart Yao's page</span>
+                      </a>
+                    )}
+                    {isJadeTizon && (
+                      <a
+                        href="/about/banong"
+                        className="absolute inset-0 z-10"
+                        aria-label={`Learn more about ${member.name}`}
+                      >
+                        <span className="sr-only">Go to Jade Tizon's page</span>
                       </a>
                     )}
                     <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg relative z-0" />
