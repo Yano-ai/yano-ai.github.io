@@ -16,11 +16,10 @@
 # next.js
 /.next/
 
-# The `out` directory should not be ignored by version control
-# /out/
-
 # production
 /build
+/_next
+/out
 
 # misc
 .DS_Store
