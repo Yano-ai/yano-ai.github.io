@@ -3,7 +3,7 @@
 	"scripts": {
 		"dev": "next dev --turbo",
 		"build": "next build",
-		"deploy": "next build && next export && gh-pages -d out"
+		"deploy": "next build && gh-pages -d out"
 	},
 	"dependencies": {
 		"clsx": "^2.1.1",
