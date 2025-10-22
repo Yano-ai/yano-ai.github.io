@@ -50,7 +50,7 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
 
       - name: Build static site
-        run: pnpm run build && pnpm run export
+        run: pnpm run build
       - name: Upload static site artifact
         uses: actions/upload-pages-artifact@v3
         with:
