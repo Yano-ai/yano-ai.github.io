@@ -14,12 +14,11 @@
 /coverage
 
 # next.js
-.next/
+/.next/
 
-# Clean output
-/out/
-/_next
-/.next
+# The `out` directory should not be ignored by version control
+# /out/
+
 # production
 /build
 
