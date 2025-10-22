@@ -1,110 +1,17 @@
 "use client";
 
-import React, { useState } from 'react';
-import { Linkedin, Twitter, Github, BrainCircuit, Zap, ShieldCheck, Users, Lightbulb, Handshake, Target, Mail, Phone } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+import React from 'react';
+import { Linkedin, Twitter, Github, Lightbulb, Handshake, Target, ShieldCheck } from 'lucide-react';
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
 
 // Reusable Helper component for section titles (consistent with main page)
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
   <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">{children}</h2>
 );
 
-// Reusable Header Component
-const SiteHeader = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const navLinks = [
-    { href: '/#services', label: 'Services' },
-    { href: '/about', label: 'About' },
-    { href: '/#why-us', label: 'Why Us' },
-    { href: '/#contact', label: 'Contact' },
-  ];
-
-  return (
-    <header className="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="/" className="text-2xl font-bold text-gray-900">
-          Yano<span className="text-blue-600">AI</span>
-        </a>
-        <nav className="hidden md:flex items-center space-x-8">
-          {navLinks.map(link => (
-            <a key={link.href} href={link.href} className={`text-gray-600 hover:text-blue-600 transition-colors duration-300 ${link.label === 'About' ? 'text-blue-600 font-semibold' : ''}`}>
-              {link.label}
-            </a>
-          ))}
-        </nav>
-        <a href="/#contact" className="hidden md:inline-block bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition-transform duration-300 hover:scale-105">
-          Get a Quote
-        </a>
-        <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
-          </svg>
-        </button>
-      </div>
-      {menuOpen && (
-        <div className="md:hidden bg-white py-4">
-          <nav className="flex flex-col items-center space-y-4">
-            {navLinks.map(link => (
-              <a key={link.href} href={link.href} className="text-gray-600 hover:text-blue-600 transition-colors duration-300" onClick={() => setMenuOpen(false)}>
-                {link.label}
-              </a>
-            ))}
-            <a href="/#contact" className="bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition-transform duration-300 hover:scale-105" onClick={() => setMenuOpen(false)}>
-              Get a Quote
-            </a>
-          </nav>
-        </div>
-      )}
-    </header>
-  );
-};
-
-// Reusable Footer Component
-const SiteFooter = () => (
-  <footer className="bg-gray-800 text-white">
-    <div className="container mx-auto px-6 py-12">
-      <div className="grid md:grid-cols-4 gap-8">
-        <div>
-          <h3 className="text-xl font-bold mb-4">Yano AI Technologies</h3>
-          <p className="text-gray-400">Transforming Business Through Intelligent Solutions.</p>
-        </div>
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2">
-            <li><a href="/about" className="text-gray-400 hover:text-white">About Us</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white">Careers</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white">Blog</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Services</h3>
-          <ul className="space-y-2">
-            <li><a href="/#services" className="text-gray-400 hover:text-white">I.T. Solutions</a></li>
-            <li><a href="/#services" className="text-gray-400 hover:text-white">AI Automation</a></li>
-            <li><a href="/#services" className="text-gray-400 hover:text-white">Consultancy</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Contact</h3>
-          <p className="text-gray-400">123 Tech Avenue, Silicon Valley, CA 94000</p>
-          <p className="text-gray-400">contact@yano.ai</p>
-        </div>
-      </div>
-      <div className="mt-12 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
-        <p className="text-gray-500">&copy; 2025 Yano AI Technologies. All rights reserved.</p>
-        <div className="flex space-x-4 mt-4 md:mt-0">
-          <a href="#" className="text-gray-500 hover:text-white"><Linkedin /></a>
-          <a href="#" className="text-gray-500 hover:text-white"><Twitter /></a>
-          <a href="#" className="text-gray-500 hover:text-white"><Github /></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-);
-
 // "Who We Are" Page Component
 const WhoWeArePage = () => {
-  const router = useRouter();
 
   const leadershipTeam = [
     {
@@ -144,20 +51,14 @@ const WhoWeArePage = () => {
     },
     {
       name: 'Jade Tizon',
-      title: 'AI Solutions Architect',
-      bio: 'Jade designs and optimizes intelligent systems that integrate machine learning and data-driven automation to enhance business performance and decision-making.',
+      title: 'AI Solutions Architect & Software Engineer',
+      bio: 'Jade is a highly skilled software engineer and AI solutions architect who designs and optimizes intelligent systems. With expertise in machine learning, data-driven automation, and various programming languages, Jade creates robust and scalable applications that enhance business performance and decision-making.',
       image: '/image-aiko/jade-tizon.png',
       social: {
         linkedin: '#',
         twitter: '#',
+        github: '#'
       }
-    },
-    {
-      name: 'Jade Tizon',
-      title: 'Software Engineer',
-      bio: 'Jade Tizon is a highly skilled software engineer with a passion for building innovative solutions. With expertise in various programming languages and frameworks, Jade Tizon contributes to the development of robust and scalable applications.',
-      image: 'https://via.placeholder.com/400',
-      social: { linkedin: '#', twitter: '#', github: '#' }
     }
   ];
 
@@ -170,7 +71,7 @@ const WhoWeArePage = () => {
 
   return (
     <div className="bg-white font-sans text-gray-700">
-      <SiteHeader />
+      <Header />
 
       <main>
         {/* Hero Section */}
@@ -280,7 +181,7 @@ const WhoWeArePage = () => {
         </section>
       </main>
 
-      <SiteFooter />
+      <Footer />
     </div>
   );
 };
