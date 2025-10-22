@@ -102,7 +102,7 @@ const BorgyCabanaProfilePage = () => {
     name: 'Borgy Cabana',
     title: 'Seasoned Professional',
     bio: 'Borgy Cabana is a seasoned professional at 41 years old, known for his polished demeanor and sharp business acumen. With a commanding presence in a tailored grey suit and striped tie, he navigates high-energy environments like upscale lounges with ease. Borgy brings years of experience in strategic networking and client engagement, blending sophistication with a commitment to building lasting professional relationships.',
-    image: '/images/borgy-cabana.png', // Placeholder, will be updated
+    image: 'https://placeholder.pics/svg/400x400/E0E7FF/000000/Borgy%20Cabana',
     social: { linkedin: '#', twitter: '#', github: '#' }
   };
 
