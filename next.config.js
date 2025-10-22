@@ -9,6 +9,7 @@ const nextConfig = {
   images: {
     unoptimized: true, // Required for static export with Next.js 13+
   },
+  outputFileTracingRoot: __dirname, // Fix workspace root detection
 };
 
 module.exports = nextConfig;
