@@ -19,7 +19,7 @@ export const Header = () => {
         </a>
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map(link => (
-            <a key={link.href} href={link.href} className={`text-gray-600 hover:text-blue-600 transition-colors duration-300 ${link.label === 'About' && typeof window !== 'undefined' && window.location.pathname.includes('/about') ? 'text-blue-600 font-semibold' : ''}`}>
+            <a key={link.href} href={link.href} className="text-gray-600 hover:text-blue-600 transition-colors duration-300">
               {link.label}
             </a>
           ))}

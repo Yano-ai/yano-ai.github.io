@@ -267,7 +267,7 @@ export default function YanoAIPage() {
             </div>
           </div>
           <div className="mt-12 border-t border-neutral-700 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-neutral-500">&copy; {new Date().getFullYear()} Yano AI Technologies. All rights reserved.</p>
+            <p className="text-neutral-500">&copy; 2025 Yano AI Technologies. All rights reserved.</p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <a href="#" className="text-neutral-500 hover:text-white"><Linkedin /></a>
               <a href="#" className="text-neutral-500 hover:text-white"><Twitter /></a>
