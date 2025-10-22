@@ -101,10 +101,10 @@ const WillartYaoProfilePage = () => {
   const member = {
     name: 'Willart Yao',
     title: 'AI-Powered Web Developer',
-    bio: `Willart Yao is a passionate and driven AI Web Developer dedicated to building intelligent and user-friendly web applications. With a strong foundation in modern web technologies, he specializes in integrating cutting-edge artificial intelligence to create seamless and responsive user experiences. 
+    bio: `Willart Yao is a passionate and driven AI Web Developer dedicated to building intelligent and user-friendly web applications. With a strong foundation in modern web technologies, he specializes in integrating cutting-edge artificial intelligence to create seamless and responsive user experiences.
     His expertise lies in machine learning and natural language processing, allowing him to develop applications that are not only functional but also smart and intuitive. Willart is a natural problem-solver, consistently seeking innovative solutions to complex challenges. His commitment to continuous learning and staying at the forefront of AI and web development makes him a valuable asset to any forward-thinking team.`,
-    image: '/image-aiko/willart yao.jpg', // Placeholder image
-    social: { linkedin: '#', twitter: '#', github: 'https://github.com/willartyao' } // Assuming GitHub link is provided
+    image: '/image-aiko/willart yao.jpg',
+    social: { linkedin: '#', twitter: '#', github: 'https://github.com/willartyao' }
   };
 
   return (
