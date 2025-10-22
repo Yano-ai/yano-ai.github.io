@@ -102,7 +102,7 @@ const BanongProfilePage = () => {
     name: 'Jade Tizon',
     title: 'Web Designer and Developer',
     bio: `Jade Tizon is a dedicated web designer and developer specializing in AI and machine learning. With a strong foundation in front-end and back-end technologies, Jade crafts intuitive, responsive websites that leverage machine learning algorithms to deliver personalized user experiences, predictive analytics, and intelligent automation. Passionate about bridging design aesthetics with advanced tech, Jade focuses on creating scalable solutions that drive innovation and efficiency for clients across various industries.`,
-    image: 'https://via.placeholder.com/400', // Placeholder image
+    image: '/image-aiko/jade-tizon.png',
     social: { linkedin: '#', twitter: '#', github: '#' }
   };
 

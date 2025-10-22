@@ -132,7 +132,7 @@ const WhoWeArePage = () => {
       name: 'Borgy Cabana',
       title: 'Seasoned Professional',
       bio: 'Borgy Cabana is a seasoned professional at 41 years old...',
-      image: '/images/borgy-cabana.png',
+      image: 'https://placeholder.pics/svg/300x300/E0E7FF/000000/Borgy%20Cabana',
       social: {}
     },
     {
