@@ -49,12 +49,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
 
-      - name: Build Next.js site
-        run: pnpm run build
-
-      - name: Export static site (next export)
-        run: pnpm run export
-
+      - name: Build and export static site
+        run: pnpm run deploy
       - name: Upload static site artifact
         uses: actions/upload-pages-artifact@v3
         with:
