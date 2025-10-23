@@ -125,7 +125,7 @@ const WhoWeArePage = () => {
       name: 'Maria Garcia',
       title: 'Head of AI Strategy',
       bio: 'Maria translates complex business needs into actionable AI strategies, helping clients navigate their digital transformation journey.',
-      image: 'https://placeholder.pics/svg/300x300/E0E7FF/000000/Maria%20Garcia',
+      image: '/image-aiko/maria.png',
       social: { linkedin: '#', twitter: '#' }
     },
     {
