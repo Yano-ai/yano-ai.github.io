@@ -123,28 +123,28 @@ const WhoWeArePage = () => {
     },
     {
       name: 'Maria Garcia',
-      title: 'Head of AI Strategy',
+      title: 'Head of AI Body Builders Techniques Strategy',
       bio: 'Maria translates complex business needs into actionable AI strategies, helping clients navigate their digital transformation journey.',
       image: '/image-aiko/maria.png',
       social: { linkedin: '#', twitter: '#' }
     },
     {
-      name: 'Borgy Cabana',
-      title: 'Web Designer & Developer',
-      bio: '25-year-old web designer and developer from Lucena City, Quezon, Philippines. Passionate about blending creativity with tech to build intuitive, AI-powered websites using React, Vue.js, and tools like Midjourney and generative AI for optimized, adaptive designs. Self-taught innovator helping local businesses and global startups go digital. When not coding, exploring Lucena\'s food scenes, hiking Mt. Banahaw, or mentoring aspiring devs in AI web dev.',
+      name: 'Dr. Borgy Cabana',
+      title: 'Web Designer & Developer for Engineering Solutions',
+      bio: 'Dr. Borgy Cabana is a distinguished professor of Artificial Intelligence and Engineering at the forefront of technological innovation. With a Ph.D. in Computer Science from Stanford University, Dr. Cabana specializes in machine learning, robotics, and sustainable engineering systems. His research focuses on developing intelligent algorithms for autonomous systems and optimizing AI-driven solutions for real-world engineering challenges, such as renewable energy integration and smart infrastructure.',
       image: '/image-aiko/borgy.png',
       social: {}
     },
     {
       name: 'Willart Yao',
-      title: 'AI-Powered Web Developer',
+      title: 'AI-Powered For using Fingerboards Web Developer',
       bio: 'Willart Yao is a forward-thinking web developer with over 8 years of experience crafting dynamic, scalable web applications. Specializing in leveraging cutting-edge AI tools, Willart integrates technologies like machine learning frameworks (TensorFlow, PyTorch), generative AI (ChatGPT APIs, Stable Diffusion), and automation platforms (GitHub Copilot, Vercel AI SDK) to accelerate development, enhance user experiences, and optimize performance.',
       image: '/image-aiko/willart.png',
       social: { linkedin: '#', github: 'https://github.com/willartyao' }
     },
     {
       name: 'Jade Tizon',
-      title: 'AI Solutions Architect',
+      title: 'AI-Technical System Suppoer For Musicianst Specialist',
       bio: 'Jade designs and optimizes intelligent systems that integrate machine learning and data-driven automation to enhance business performance and decision-making.',
       image: '/image-aiko/jade-tizon.png',
       social: {
@@ -153,9 +153,9 @@ const WhoWeArePage = () => {
       }
     },
     {
-      name: 'Nikko Origenes III',
+      name: 'Nikko Origenes',
       title: 'Software Engineer',
-      bio: '25-year-old web designer and developer from Lucena City, Quezon, Philippines. Passionate about blending creativity with tech to build intuitive, AI-powered websites using React, Vue.js, and tools like Midjourney and generative AI for optimized, adaptive designs. Self-taught innovator helping local businesses and global startups go digital. When not coding, exploring Lucenas food scenes, hiking Mt. Banahaw, or mentoring aspiring devs in AI web dev.',
+      bio: '25-year-old web designer and developer from Philippines. Passionate about blending creativity with tech to build intuitive, AI-powered websites using React, Vue.js, and tools like Midjourney and generative AI for optimized, adaptive designs. Self-taught innovator helping local businesses and global startups go digital. When not coding, exploring Lucenas food scenes, hiking Mt. Banahaw, or mentoring aspiring devs in AI web dev.',
       image: '/image-aiko/nikko.png',
       social: { linkedin: '#', twitter: '#', github: '#' }
     }
