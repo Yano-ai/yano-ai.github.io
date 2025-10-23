@@ -144,7 +144,7 @@ const WhoWeArePage = () => {
     },
     {
       name: 'Jade Tizon',
-      title: 'AI-Technical System Suppoer For Musicianst Specialist',
+      title: 'AI-Technical System Suppoer For Musician Specialist',
       bio: 'Jade designs and optimizes intelligent systems that integrate machine learning and data-driven automation to enhance business performance and decision-making.',
       image: '/image-aiko/jade-tizon.png',
       social: { linkedin: '#', twitter: '#', github: '#' }
