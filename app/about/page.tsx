@@ -111,7 +111,7 @@ const WhoWeArePage = () => {
       name: 'Dr. Alistair Finch',
       title: 'Founder & CEO',
       bio: 'With a Ph.D. in Machine Learning, Alistair drives our vision for AI-driven transformation, ensuring we stay at the forefront of technology.',
-      image: 'https://placeholder.pics/svg/300x300/E0E7FF/000000/Alistair%20Finch',
+      image: '/image-aiko/Dr.png',
       social: { linkedin: '#', twitter: '#' }
     },
     {
