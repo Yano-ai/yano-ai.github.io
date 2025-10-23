@@ -118,7 +118,7 @@ const WhoWeArePage = () => {
       name: 'Jian Li',
       title: 'Chief Technology Officer',
       bio: 'Jian is the architect of our robust technology infrastructure, specializing in scalable cloud solutions and enterprise system integration.',
-      image: 'https://placeholder.pics/svg/300x300/E0E7FF/000000/Jian%20Li',
+      image: '/images/jian li.jpg',
       social: { linkedin: '#', github: '#' }
     },
     {
