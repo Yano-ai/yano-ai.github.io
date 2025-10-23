@@ -112,45 +112,42 @@ const WhoWeArePage = () => {
       title: 'Founder & CEO',
       bio: 'With a Ph.D. in Machine Learning, Alistair drives our vision for AI-driven transformation, ensuring we stay at the forefront of technology.',
       image: '/image-aiko/Dr.png',
-      social: { linkedin: '#', twitter: '#' }
+      social: { linkedin: '#', twitter: '#', github: '#' }
     },
     {
       name: 'Jian Li',
       title: 'Chief Technology Officer',
       bio: 'Jian is the architect of our robust technology infrastructure, specializing in scalable cloud solutions and enterprise system integration.',
       image: '/image-aiko/jian.png',
-      social: { linkedin: '#', github: '#' }
+      social: { linkedin: '#', twitter: '#', github: '#' }
     },
     {
       name: 'Maria Garcia',
       title: 'Head of AI Body Builders Techniques Strategy',
       bio: 'Maria translates complex business needs into actionable AI strategies, helping clients navigate their digital transformation journey.',
       image: '/image-aiko/maria.png',
-      social: { linkedin: '#', twitter: '#' }
+      social: { linkedin: '#', twitter: '#', github: '#' }
     },
     {
       name: 'Dr. Borgy Cabana',
       title: 'Web Designer & Developer for Engineering Solutions',
       bio: 'Dr. Borgy Cabana is a distinguished professor of Artificial Intelligence and Engineering at the forefront of technological innovation. With a Ph.D. in Computer Science from Stanford University, Dr. Cabana specializes in machine learning, robotics, and sustainable engineering systems. His research focuses on developing intelligent algorithms for autonomous systems and optimizing AI-driven solutions for real-world engineering challenges, such as renewable energy integration and smart infrastructure.',
       image: '/image-aiko/borgy.png',
-      social: {}
+      social: { linkedin: '#', twitter: '#', github: '#' }
     },
     {
       name: 'Willart Yao',
       title: 'AI-Powered For using Fingerboards Web Developer',
       bio: 'Willart Yao is a forward-thinking web developer with over 8 years of experience crafting dynamic, scalable web applications. Specializing in leveraging cutting-edge AI tools, Willart integrates technologies like machine learning frameworks (TensorFlow, PyTorch), generative AI (ChatGPT APIs, Stable Diffusion), and automation platforms (GitHub Copilot, Vercel AI SDK) to accelerate development, enhance user experiences, and optimize performance.',
       image: '/image-aiko/willart.png',
-      social: { linkedin: '#', github: 'https://github.com/willartyao' }
+      social: { linkedin: '#', twitter: '#', github: '#' }
     },
     {
       name: 'Jade Tizon',
       title: 'AI-Technical System Suppoer For Musicianst Specialist',
       bio: 'Jade designs and optimizes intelligent systems that integrate machine learning and data-driven automation to enhance business performance and decision-making.',
       image: '/image-aiko/jade-tizon.png',
-      social: {
-        linkedin: '#',
-        twitter: '#',
-      }
+      social: { linkedin: '#', twitter: '#', github: '#' }
     },
     {
       name: 'Nikko Origenes',
