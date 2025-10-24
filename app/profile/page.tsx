@@ -32,7 +32,7 @@ export default function ProfilePage() {
             <SectionTitle>My Profile</SectionTitle>
             <div className="flex flex-col items-center max-w-3xl mx-auto bg-neutral-50 p-8 rounded-xl shadow-sm border border-neutral-200">
               <motion.img
-                src="https://via.placeholder.com/150" // Placeholder image
+                src="/image-aiko/willart yao.jpg" // Profile image
                 alt="Profile Picture"
                 className="rounded-full w-32 h-32 object-cover mb-6 shadow-lg"
                 initial={{ opacity: 0, scale: 0.8 }}
