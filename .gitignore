@@ -16,11 +16,10 @@
 # next.js
 /.next/
 
-# The `out` directory should not be ignored by version control
-# /out/
-
 # production
 /build
+/_next
+/out
 
 # misc
 .DS_Store
@@ -41,3 +40,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .aider*
+package-lock.json

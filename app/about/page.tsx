@@ -129,18 +129,18 @@ const WhoWeArePage = () => {
       social: { linkedin: '#', twitter: '#', github: '#' }
     },
     {
-      name: 'Dr. Borgy Cabana',
-      title: 'Web Designer & Developer for Engineering Solutions',
-      bio: 'Dr. Borgy Cabana is a distinguished professor of Artificial Intelligence and Engineering at the forefront of technological innovation. With a Ph.D. in Computer Science from Stanford University, Dr. Cabana specializes in machine learning, robotics, and sustainable engineering systems. His research focuses on developing intelligent algorithms for autonomous systems and optimizing AI-driven solutions for real-world engineering challenges, such as renewable energy integration and smart infrastructure.',
-      image: '/image-aiko/borgy.png',
-      social: { linkedin: '#', twitter: '#', github: '#' }
+      name: 'Borgy Cabana',
+      title: 'Seasoned Professional',
+      bio: 'Borgy Cabana is a seasoned professional at 41 years old...',
+      image: '/images/borgy-cabana.png',
+      social: {}
     },
     {
       name: 'Willart Yao',
-      title: 'AI-Powered For using Fingerboards Web Developer',
+      title: 'AI-Powered Web Developer',
       bio: 'Willart Yao is a forward-thinking web developer with over 8 years of experience crafting dynamic, scalable web applications. Specializing in leveraging cutting-edge AI tools, Willart integrates technologies like machine learning frameworks (TensorFlow, PyTorch), generative AI (ChatGPT APIs, Stable Diffusion), and automation platforms (GitHub Copilot, Vercel AI SDK) to accelerate development, enhance user experiences, and optimize performance.',
-      image: '/image-aiko/willart.png',
-      social: { linkedin: '#', twitter: '#', github: '#' }
+      image: '/images/ey.jpg',
+      social: { linkedin: '#', github: 'https://github.com/willartyao' }
     },
     {
       name: 'Jade Tizon',
