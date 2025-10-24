@@ -102,7 +102,7 @@ const BorgyCabanaProfilePage = () => {
     name: 'Borgy Cabana',
     title: 'AI Solutions Engineer',
     bio: 'Borgy Cabana is a skilled web developer and AI Solutions Engineer with an engineering background, specializing in building high-performance, scalable websites and applications. Proficient in full-stack development (HTML, CSS, JavaScript, React, Node.js, PHP), he delivers user-focused solutions for e-commerce and enterprise clients. His meticulous approach ensures clean code, optimal security, and seamless user experiences. Passionate about innovation, Borgy stays ahead with cloud technologies (AWS/Azure) and SEO trends—empowering businesses to elevate their digital presence.',
-        image: '/https://placeholder.pics/svg/400x400/E0E7FF/000000/Borgy%20Cabana',
+        image: '/image-aiko/Borgy Cabana Image.png',
     social: { linkedin: '#', twitter: '#', github: '#' }
   };
 
