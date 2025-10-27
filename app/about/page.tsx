@@ -130,10 +130,10 @@ const WhoWeArePage = () => {
     },
     {
       name: 'Borgy Cabana',
-      title: 'Seasoned Professional',
-      bio: 'Borgy Cabana is a seasoned professional at 41 years old...',
-      image: 'https://placeholder.pics/svg/300x300/E0E7FF/000000/Borgy%20Cabana',
-      social: {}
+      title: 'AI Solutions Tech',
+      bio: 'As a skilled web developer and engineer, I craft high-performance websites and applications, specializing in full-stack development (HTML, CSS, JavaScript, React, Node.js). I integrate AI solutions—such as chatbots, recommendation systems, and SEO analytics—to deliver intelligent, user-focused platforms for e-commerce and enterprise clients. Passionate about innovation, I leverage cloud technologies (AWS/Azure) and AI-driven tools to enhance functionality and security. Connect to transform your digital vision.',
+      image: 'https://image-aiko/Borgy Cabana Image.png',
+      social: { linkedin: '#' , twitter: '#' github: '#' }
     },
     {
       name: 'Willart Yao',
