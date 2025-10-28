@@ -153,9 +153,9 @@ const WhoWeArePage = () => {
       }
     },
     {
-      name: 'Jade Tizon',
+      name: 'Roger Wasabi III',
       title: 'Software Engineer',
-      bio: 'Jade Tizon is a highly skilled software engineer with a passion for building innovative solutions. With expertise in various programming languages and frameworks, Jade Tizon contributes to the development of robust and scalable applications.',
+      bio: '25-year-old web designer and developer from Lucena City, Quezon, Philippines. Passionate about blending creativity with tech to build intuitive, AI-powered websites using React, Vue.js, and tools like Midjourney and generative AI for optimized, adaptive designs. Self-taught innovator helping local businesses and global startups go digital. When not coding, exploring Lucenas food scenes, hiking Mt. Banahaw, or mentoring aspiring devs in AI web dev.',
       image: 'https://via.placeholder.com/400',
       social: { linkedin: '#', twitter: '#', github: '#' }
     }
