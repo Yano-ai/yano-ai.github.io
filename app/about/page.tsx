@@ -111,28 +111,28 @@ const WhoWeArePage = () => {
       name: 'Dr. Alistair Finch',
       title: 'Founder & CEO',
       bio: 'With a Ph.D. in Machine Learning, Alistair drives our vision for AI-driven transformation, ensuring we stay at the forefront of technology.',
-      image: '/image-aiko/Dr.png',
-      social: { linkedin: '#', twitter: '#', github: '#' }
+      image: 'https://placeholder.pics/svg/300x300/E0E7FF/000000/Alistair%20Finch',
+      social: { linkedin: '#', twitter: '#' }
     },
     {
       name: 'Jian Li',
       title: 'Chief Technology Officer',
       bio: 'Jian is the architect of our robust technology infrastructure, specializing in scalable cloud solutions and enterprise system integration.',
-      image: '/image-aiko/jian.png',
-      social: { linkedin: '#', twitter: '#', github: '#' }
+      image: 'https://placeholder.pics/svg/300x300/E0E7FF/000000/Jian%20Li',
+      social: { linkedin: '#', github: '#' }
     },
     {
       name: 'Maria Garcia',
-      title: 'Head of AI Body Builders Techniques Strategy',
+      title: 'Head of AI Strategy',
       bio: 'Maria translates complex business needs into actionable AI strategies, helping clients navigate their digital transformation journey.',
-      image: '/image-aiko/maria.png',
-      social: { linkedin: '#', twitter: '#', github: '#' }
+      image: 'https://placeholder.pics/svg/300x300/E0E7FF/000000/Maria%20Garcia',
+      social: { linkedin: '#', twitter: '#' }
     },
     {
       name: 'Borgy Cabana',
-      title: 'Seasoned Professional',
-      bio: 'Borgy Cabana is a seasoned professional at 41 years old...',
-      image: '/images/borgy-cabana.png',
+      title: 'Web Designer & Developer',
+      bio: '25-year-old web designer and developer from Lucena City, Quezon, Philippines. Passionate about blending creativity with tech to build intuitive, AI-powered websites using React, Vue.js, and tools like Midjourney and generative AI for optimized, adaptive designs. Self-taught innovator helping local businesses and global startups go digital. When not coding, exploring Lucena\'s food scenes, hiking Mt. Banahaw, or mentoring aspiring devs in AI web dev.',
+      image: 'https://lh3.googleusercontent.com/gg-dl/AJfQ9KR4MUETFdnkvbXPeTKbT_frnVOXRmj5B4XS24K--n3NpW1USK6qyR7-TBak-i_QmL6ezeWDJoSz-4EUK11xlbIY8FR4BPhniQYts4q7OV0yxaP27DLEHVlzC17ZNHqtvw7vx8aq9egyasLQwyPPyBHPfKsiuwIVwy2bv5xCMMs2JtiK=s1024-rj',
       social: {}
     },
     {
@@ -144,16 +144,19 @@ const WhoWeArePage = () => {
     },
     {
       name: 'Jade Tizon',
-      title: 'AI-Technical System Suppoer For Musician Specialist',
+      title: 'AI Solutions Architect',
       bio: 'Jade designs and optimizes intelligent systems that integrate machine learning and data-driven automation to enhance business performance and decision-making.',
       image: '/image-aiko/jade-tizon.png',
-      social: { linkedin: '#', twitter: '#', github: '#' }
+      social: {
+        linkedin: '#',
+        twitter: '#',
+      }
     },
     {
-      name: 'Nikko Origenes',
+      name: 'Jade Tizon',
       title: 'Software Engineer',
-      bio: '25-year-old web designer and developer from Philippines. Passionate about blending creativity with tech to build intuitive, AI-powered websites using React, Vue.js, and tools like Midjourney and generative AI for optimized, adaptive designs. Self-taught innovator helping local businesses and global startups go digital. When not coding, exploring Lucenas food scenes, hiking Mt. Banahaw, or mentoring aspiring devs in AI web dev.',
-      image: '/image-aiko/nikko.png',
+      bio: 'Jade Tizon is a highly skilled software engineer with a passion for building innovative solutions. With expertise in various programming languages and frameworks, Jade Tizon contributes to the development of robust and scalable applications.',
+      image: 'https://via.placeholder.com/400',
       social: { linkedin: '#', twitter: '#', github: '#' }
     }
   ];

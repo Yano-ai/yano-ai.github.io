@@ -22,9 +22,6 @@ export default function AboutPage() {
       <p>
         <Link href="/who-we-are/about/team/jade-tizon">Jade Tizon</Link>
       </p>
-      <p>
-        <Link href="/who-we-are/about/team/borgy-cabana">Borgy Cabana</Link>
-      </p>
     </main>
   );
 }
