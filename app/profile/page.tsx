@@ -32,7 +32,7 @@ export default function ProfilePage() {
             <SectionTitle>My Profile</SectionTitle>
             <div className="flex flex-col items-center max-w-3xl mx-auto bg-neutral-50 p-8 rounded-xl shadow-sm border border-neutral-200">
               <motion.img
-                src="https://via.placeholder.com/150" // Placeholder image
+                src="/image-aiko/Roger.png" // Profile picture
                 alt="Profile Picture"
                 className="rounded-full w-32 h-32 object-cover mb-6 shadow-lg"
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -40,10 +40,10 @@ export default function ProfilePage() {
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.5 }}
               />
-              <h3 className="text-3xl font-bold text-neutral-900 mb-2">Your Name Here</h3>
+              <h3 className="text-3xl font-bold text-neutral-900 mb-2">Roger Wasabi III</h3>
               <p className="text-lg text-neutral-700 text-center mb-6">
-                A brief description about yourself, your skills, and what you do.
-                This is a placeholder for your personal introduction.
+                Roger Wasabi III is a seasoned software engineer with a passion for building innovative web applications.
+                He specializes in front-end development with React and Next.js, and has a strong background in UI/UX design.
               </p>
               <div className="flex space-x-6 mb-6">
                 <a href="#" className="text-neutral-500 hover:text-primary transition-colors duration-300">

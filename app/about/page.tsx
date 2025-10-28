@@ -156,7 +156,7 @@ const WhoWeArePage = () => {
       name: 'Roger Wasabi III',
       title: 'Software Engineer',
       bio: '25-year-old web designer and developer from Lucena City, Quezon, Philippines. Passionate about blending creativity with tech to build intuitive, AI-powered websites using React, Vue.js, and tools like Midjourney and generative AI for optimized, adaptive designs. Self-taught innovator helping local businesses and global startups go digital. When not coding, exploring Lucenas food scenes, hiking Mt. Banahaw, or mentoring aspiring devs in AI web dev.',
-      image: 'https://via.placeholder.com/400',
+      image: '/image-aiko/Roger.png',
       social: { linkedin: '#', twitter: '#', github: '#' }
     }
   ];
