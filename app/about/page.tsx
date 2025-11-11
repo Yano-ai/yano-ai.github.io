@@ -158,7 +158,14 @@ const WhoWeArePage = () => {
       bio: 'Jade Tizon is a highly skilled software engineer with a passion for building innovative solutions. With expertise in various programming languages and frameworks, Jade Tizon contributes to the development of robust and scalable applications.',
       image: 'https://via.placeholder.com/400',
       social: { linkedin: '#', twitter: '#', github: '#' }
-    }
+    },
+   {
+  name: 'Stephanie',
+  title: 'AI Web Developer',
+  bio: 'AI Web Developer | Makes smart websites with AI. Loves clean code and easy design.',
+  image: '/image-aiko/stephanie.png',
+  social: { linkedin: '#', twitter: '#', github: '#' }
+}
   ];
 
   const companyValues = [
